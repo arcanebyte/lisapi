@@ -1,0 +1,28 @@
+---
+
+- name: UUCP | configure port file
+  template:
+    src: port.j2
+    dest: /etc/uucp/port
+    owner: root
+    group: uucp
+    mode: 0644
+  tags: uucp
+
+- name: UUCP | configure sys file
+  template:
+    src: sys.j2
+    dest: /etc/uucp/sys
+    owner: root
+    group: uucp
+    mode: 0644
+  tags: uucp
+
+- name: UUCP | configure config file
+  template:
+    src: config.j2
+    dest: /etc/uucp/config
+    owner: root
+    group: uucp
+    mode: 0644
+  tags: uucp

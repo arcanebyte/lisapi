@@ -1,0 +1,25 @@
+#
+# port		This file defines the possible dialout ports you have
+#		on your system. Normally you have only one, and it's
+#		most probably /dev/ttyS[0-3]. Define that port here.
+#
+#		If you have multiple dialout ports, you can ofcourse
+#		define them all if you want.
+#
+port ACU
+type modem
+#
+# NOTE: Make SURE this device is owned by root:dialout, mode 0660 (crw-rw---)
+#
+
+#
+# Description for the TCP port - pretty trivial. DON'T DELETE.
+#
+port TCP
+type tcp
+
+port serial0
+type direct
+device /dev/ttyUSB0
+speed 9600
+hardflow false
