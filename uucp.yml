@@ -4,6 +4,3 @@
   connection: local
   roles: 
     - uucp
-
-  tasks:
-  - include: roles/uucp/tasks/main.yml

@@ -1,4 +1,4 @@
 pi_name: rpi
 lisa_name: lisa
-call_login: * 
-call_password: *
+call_login: "*" 
+call_password: "*"
