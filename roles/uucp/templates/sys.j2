@@ -37,8 +37,25 @@ protocol-parameter G short-packets
 #port TCP
 #protocol t
 
+{% for site in sites %}
+# {{ site.description }}
+# {{ site.location }}
+system {{ site.system }}
+call-login: {{ site.call-login | default("*") }}
+call-password: {{ site.call-password | default("*") }}
+time: {{ site.time | default("any") }}
+chat: {{ site.chat }}
+address: {{ site.address }}
+port: {{ site.port | default ("TCP") }}
+protocol: {{ site.protocol | default("t") }}
+
+
+{% endfor %}
+
 # Connection to Lisa
 # NOTE: The port here isn't a real port, but a label defined in the `port` file
+# The system name should be unique to the site. Consult with LisaNet admin.
+# Call login and password defaults to * and is OK for UniPlus.
 
 system {{ lisa_name }}
 call-login {{ call_login }}

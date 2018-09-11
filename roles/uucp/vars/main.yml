@@ -1,0 +1,11 @@
+sites:
+- system: arcanepi
+  description: "Connection to ArcanePi"
+  location: "Dayton, Ohio"
+  call-login: "*"
+  call-password: "*"
+  time: any
+  chat: "" \d\d\r\c ogin: \d\L word: \P
+  address: uucp.arcanebyte.com
+  port: TCP
+  protocol: t
