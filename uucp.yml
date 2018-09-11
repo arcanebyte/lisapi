@@ -1,4 +1,13 @@
 ---
+#
+# uucp.yml
+#
+# Ansible playbook for configuring UUCP on hosts connecting to LisaNet.
+#
+# arcanepi!ulisa!james
+# james@arcanebyte.com
+# james.denton@outlook.com
+
 - hosts: localhost
   gather_facts: no
   connection: local
