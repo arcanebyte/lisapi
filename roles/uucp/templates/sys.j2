@@ -41,13 +41,13 @@ protocol-parameter G short-packets
 # {{ site.description }}
 # {{ site.location }}
 system {{ site.system }}
-call-login: {{ site.call_login | default("*") }}
-call-password: {{ site.call_password | default("*") }}
-time: {{ site.time | default("any") }}
-chat: {{ site.chat }}
-address: {{ site.address }}
-port: {{ site.port | default ("TCP") }}
-protocol: {{ site.protocol | default("t") }}
+call-login {{ site.call_login | default("*") }}
+call-password {{ site.call_password | default("*") }}
+time {{ site.time | default("any") }}
+chat {{ site.chat }}
+address {{ site.address }}
+port {{ site.port | default ("TCP") }}
+protocol {{ site.protocol | default("t") }}
 
 
 {% endfor %}
