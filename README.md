@@ -30,7 +30,9 @@ absence of a direct connection, intermediary hosts using TCP/IP can be used.
 Individual hosts and users are separated on the **bang** path using
 exclamation `!` marks, like `intermediary!host!user`.
 
-The LisaNet admin can be reached at `arcanepi!ulisa!james` or `james@arcanebyte.com`.
+The LisaNet admin can be reached at `arcanepi!ulisa!james` or
+`james@arcanebyte.com`. If all else fails, Internet email at `james.denton@outlook.com
+should work.
 
 ## Using this playbook
 
