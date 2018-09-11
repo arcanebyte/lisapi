@@ -18,6 +18,15 @@
     mode: 0644
   tags: uucp
 
+- name: UUCP | configure call file
+  template:
+    src: call.j2
+    dest: /etc/uucp/call
+    owner: root
+    group: uucp
+    mode: 0644
+  tags: uucp
+
 - name: UUCP | configure config file
   template:
     src: config.j2

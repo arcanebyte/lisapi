@@ -1,0 +1,18 @@
+# This file can be used to define values unique to the local site.
+
+# pi_name is the name of the local intermediary host.
+# This should be a unique name. Please consult with LisaNet admin.
+pi_name: rpi
+
+# lisa_name is the name of the local Lisa on LisaNet
+# This should be a unique name. Please consult with LisaNet admin.
+lisa_name: lisa
+
+# lisa_login is the login name used for connections from the
+# local intermediary to the local Lisa.
+# lisa_password is the password used for connections from the
+# local intermediary to the local Lisa.
+#
+# For UniPlus, the username and password should be 'uucp/uucp'
+lisa_login: "uucp"
+lisa_password: "uucp"
