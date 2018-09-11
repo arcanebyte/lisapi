@@ -58,8 +58,8 @@ protocol: {{ site.protocol | default("t") }}
 # Call login and password defaults to * and is OK for UniPlus.
 
 system {{ lisa_name }}
-call-login {{ call_login }}
-call-password {{ call_password }}
+call-login {{ lisa_login }}
+call-password {{ lisa_password }}
 time any
 port serial0
 chat "" \d\d\r\c ogin:-BREAK-ogin:-BREAK-ogin: \d\L
